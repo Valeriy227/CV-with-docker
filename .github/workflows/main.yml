@@ -15,5 +15,15 @@ jobs:
         run: docker run --mount src="$(pwd)/cv",target=/cv,type=bind cvdocker
       - uses: actions/upload-artifact@v2
         with:
-          name: prog
-          path: cv/prog.c
+          name: resume
+          path: cv/main.pdf
+
+  # pdf_publishing_job:
+  #   needs: pdf_creating_job
+  #   runs-on: ubuntu-latest
+  #   name: Publish pdf to github pages
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
+  #     - name: 
+
