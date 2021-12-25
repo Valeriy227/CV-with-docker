@@ -1,0 +1,97 @@
+\documentclass{resume}
+\usepackage[hidelinks]{hyperref}
+\usepackage{lipsum}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=black}
+
+\name{Valeriy Borzykin}
+\contact{\href{tel:+79852125862}{+79852125862}}
+\contact{\href{mailto:vanin606@gmail.com}{vanin606@gmail.com}}
+\contact{\href{https://github.com/Valeriy227}{github.com/Valeriy227}}
+
+\begin{document}
+\makeheader
+
+\begin{ResumeSection}{education}
+    \begin{ResumeSubsection}{org={National Research University “Higher School of Economics”},position={Applied Mathematics and Computer Science, Bachelor
+    }, location = {Moscow, Russia}, duration={Sep 2020 - Expected Jun 2024}}
+        \begin{itemize}
+            \item Minor: Mathematical Structures
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{experience}
+    \begin{ResumeSubsection}{org=Analytical software solutions,location={Moscow, Russia},position={Machine Learning Engineering Intern},duration=Aug 2021}
+        \begin{itemize}
+            \item {Implemented recommendation system based on collaborative filtering for a highly\\ sparse preference matrix.}
+            \item {Used 3 methods: simple popularity method, matrix factorization, and network analysis. Using\\ the best of them improved recommendations quality twice.}
+            \item {Using Python, Implicit, StellarGraph, Networkx}
+            \item {\href{https://github.com/Valeriy227/RecommendationSystem}{https://github.com/Valeriy227/RecommendationSystem}}
+        \end{itemize}
+    \end{ResumeSubsection}
+    \begin{ResumeSubsection}{org=Projects (c++)}
+        \begin{itemize}
+            \item \href{https://github.com/Valeriy227/Tic-tac-toe}{Tic-tac-toe} - an implementation of the text game TIC-TAC-TOE.
+            \item \href{https://github.com/Valeriy227/HashTable}{HashTable} - (aka std::unordered\_set) a fast hash table with open addressing.
+            \item \href{https://github.com/Valeriy227/SmartPointers}{SmartPointers} - an optimal implementation of such smart pointers, like shared\_ptr,\\ unique\_ptr, and weak\_ptr
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{achievements}
+    \begin{ResumeSubsection}{org=Prize-winner of the Russian National Programming Olympiad for three times,location={2018, 2019, 2020}}
+        \begin{itemize}
+            \item Scored Top-50 from all high school students-participants in Russian National\\ Programming Competition.
+        \end{itemize}
+    \end{ResumeSubsection}
+    \begin{ResumeSubsection}{org=Prize-winner of more than 10 Olympiads,location={2018 - 2020}}
+        \begin{itemize}
+            \item As a high school student won over 10 Olympiads in mathematics, programming, and physics.
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{skills}
+    \newcommand{\skill}[2]{\textbf{#1} - #2}
+    \begin{ResumeSubsection}{org=Engineering}
+        \begin{itemize}
+            \item \skill{Software Development}{C/C++, Windows/Linux, Bash, Git/GitHub, MongoDB}
+            \item \skill{Machine Learning}{Python, numpy, matplotlib, pandas, sklearn}
+        \end{itemize}
+    \end{ResumeSubsection}
+    \begin{ResumeSubsection}{org=General}
+        \begin{itemize}
+            \item \skill{Language Skills}{English: B1-B2, Russian}
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\begin{ResumeSection}{Summer schools}
+    \begin{ResumeSubsection}{org=Summer Fintech School,location={(online) Jul 2021}}
+        \begin{itemize}
+            \item Lectures from representatives of Russian fintech companies.
+        \end{itemize}
+    \end{ResumeSubsection}
+    \begin{ResumeSubsection}{org=January Scientific School of Mathematics and Programming,location={Jan 2020}}
+        \begin{itemize}
+            \item Mini-courses in computer science and programming
+        \end{itemize}
+    \end{ResumeSubsection}
+    \begin{ResumeSubsection}{org={Tinkoff Generation}, location = {Sep 2018 - Jan 2019}}
+        \begin{itemize}
+            \item Algorithms and Data Structures
+            \item Machine Learning
+        \end{itemize}
+    \end{ResumeSubsection}
+    \begin{ResumeSubsection}{org=Summer Computer School,location={Aug 2017-2019}}
+        \begin{itemize}
+            \item Algorithms and Data Structures
+        \end{itemize}
+    \end{ResumeSubsection}
+\end{ResumeSection}
+
+\end{document}
