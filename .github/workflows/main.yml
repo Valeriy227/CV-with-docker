@@ -1,19 +1,19 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  pdf_creating_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Build resume from docker
     steps:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
-        uses: ./ # Uses an action in the root directory
-        id: hello
+      - name: Build docker
+        run: docker build -t cvdocker .
+      - name: Run docker (creating a pdf)
+        run: docker run -it --mount src="$(pwd)/cv",target=/cv,type=bind cvdocker
+      - uses: actions/upload-artifact@v2
         with:
-          who-to-greet: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          name: prog
+          path: prog.c
