@@ -12,7 +12,7 @@ jobs:
       - name: Build docker
         run: docker build -t cvdocker .
       - name: Run docker (creating a pdf)
-        run: docker run -it --mount src="$(pwd)/cv",target=/cv,type=bind cvdocker
+        run: docker run --mount src="$(pwd)/cv",target=/cv,type=bind cvdocker
       - uses: actions/upload-artifact@v2
         with:
           name: prog
